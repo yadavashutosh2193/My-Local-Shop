@@ -1,7 +1,7 @@
 let mongoose = require('mongoose');
 const {ProductSchema, UserSchema, cartProductSchema} = require('./Schema');
 
-const mongoURI = "mongodb://localhost:27017" + "/MyLocalShope"
+const mongoURI = "mongodb+srv://mylocalshop:local@mylocalshop.gbjpj.mongodb.net/mylocalshop?retryWrites=true&w=majority";
 
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => { console.log("connection established with mongodb server online"); })

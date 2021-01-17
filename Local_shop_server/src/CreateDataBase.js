@@ -6,7 +6,8 @@ const {ItemArray} = require('./Products');
 
 const RefreshAll = async ()=>{
       // await ProductModel.deleteMany({});
-
+      await ProductModel.insertMany(ItemArray);
+      await ProductModel.insertMany(Cereals_Pulses);
       await ProductModel.insertMany(Spices_Dry_Fruits);
 }
 
